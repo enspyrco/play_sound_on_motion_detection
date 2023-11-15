@@ -1,12 +1,11 @@
 name: play_sound_on_motion_detection
-description: A sample command-line application.
-version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+description: Play a sound on motion detection with Raspberry Pi & Dart.
+version: 0.0.0-a1
+repository: https://github.com/enspyrco/play_sound_on_motion_detection
 
 environment:
-  sdk: ^3.1.5
+  sdk: ^3.0.0
 
-# Add regular dependencies here.
 dependencies:
   rpi_gpio: ^0.9.1
   # path: ^1.8.0

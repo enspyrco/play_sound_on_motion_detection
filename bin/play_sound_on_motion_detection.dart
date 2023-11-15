@@ -1,5 +1,8 @@
-import 'package:play_sound_on_motion_detection/play_sound_on_motion_detection.dart' as play_sound_on_motion_detection;
+import 'package:rpi_gpio/rpi_gpio.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${play_sound_on_motion_detection.calculate()}!');
+void main(List<String> arguments) async {
+  final gpio = await initialize_RpiGpio();
+
+  final led = gpio.output(15);
+  final pwmLed = gpio.pwm(12);
 }
